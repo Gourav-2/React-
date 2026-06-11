@@ -24,6 +24,12 @@ function reducer(store, action) {
             todos:[...store.todos,store.input]
         }
     }
+    else if(action.type=="delete_todo"){
+        return{
+            ...store,
+            todos:[]
+        }
+    }
 }
 const Context = ({ children }) => {
   const [store, dispatch] = useReducer(reducer, initialState);

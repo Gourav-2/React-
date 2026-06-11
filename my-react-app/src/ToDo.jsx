@@ -173,6 +173,9 @@ const Todo = () => {
     <div>
       <input onChange={(e)=>dispatch({type:"Set_inp",payload:e.target.value})}/>
       <button onClick={()=>dispatch({type:"Add_todo"})}>add</button>
+      <button onClick={()=>dispatch({type:"delete_todo"})}>Delete</button>
+      
+
       {
         store.todos.map((a)=>{
           console.log(a);
