@@ -457,33 +457,74 @@ import { useState } from "react"
 
 
 
+// import React from 'react'
+// import useCounter from "./useCounter"
+// import './App.css'
+
+// const App = () => {
+//      let{count,inc,dec,reset}=useCounter(0)
+//     //  console.log("he");
+//     //  let res=0
+//     //  function cal(){
+//     //   for(let i=0;i<1;i++){
+//     //     res=i
+//     //   }
+//     //   return res
+//     //  }
+//     //  let total=cal()
+//   return (
+  
+//     <div id="one">
+      
+//       <h2>{count}</h2>
+//       <button onClick={inc}>+</button>
+//       <button onClick={dec}>-</button>
+//       <button onClick={reset}>RESET</button>
+
+
+//     </div>
+//   )
+// }
+
+// export default App
+
+// -------------------------------counter-----------------
+
+// import React from 'react'
+// import A from "./A"
+
+// const App = () => {
+//   return (
+//     <div>
+//       <A/>
+      
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// -------------------
+//-
+
 import React from 'react'
-import useCounter from "./useCounter"
-import './App.css'
+import NavBar from "./Navbar"
+import { Route, Routes } from "react-router-dom"
+import Home from "./Home";
 
 const App = () => {
-     let{count,inc,dec,reset}=useCounter(0)
-    //  console.log("he");
-    //  let res=0
-    //  function cal(){
-    //   for(let i=0;i<1;i++){
-    //     res=i
-    //   }
-    //   return res
-    //  }
-    //  let total=cal()
   return (
-  
-    <div id="one">
-      
-      <h2>{count}</h2>
-      <button onClick={inc}>+</button>
-      <button onClick={dec}>-</button>
-      <button onClick={reset}>RESET</button>
-
+    <div>
+      <NavBar/>
+        <Routes> 
+          <Route path="/"element={<Home/>}/>
+          <Route path="/Home"element={Home}/>
+        </Routes>
 
     </div>
   )
 }
 
 export default App
+
