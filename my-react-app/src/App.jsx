@@ -508,23 +508,55 @@ import { useState } from "react"
 // -------------------
 //-
 
-import React from 'react'
-import NavBar from "./Navbar"
-import { Route, Routes } from "react-router-dom"
-import Home from "./Home";
+// import React from 'react'
+// import NavBar from "./Navbar"
+// import { Route, Routes } from "react-router-dom"
+// import Home from "./Home";
 
-const App = () => {
-  return (
-    <div>
-      <NavBar/>
-        <Routes> 
-          <Route path="/"element={<Home/>}/>
-          <Route path="/Home"element={Home}/>
-        </Routes>
+// const App = () => {
+//   return (
+//     <div>
+//       <NavBar/>
+//         <Routes> 
+//           <Route path="/"element={<Home/>}/>
+//           <Route path="/Home"element={Home}/>
+//         </Routes>
 
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
 
+
+
+// import React from 'react'
+
+// const App = () => {
+//   return (
+//     <div>App</div>
+//   )
+// }
+
+// export default App
+
+
+
+// import React from 'react'
+// import { useParams } from 'react-router-dom'
+
+// const UserProfile = () => {
+//     let list=['A','B','C','D']
+
+
+//      let {id}=  useParams()
+//     let data= list.find((_,index)=>{
+//         return id==index
+//      })
+
+//   return (
+//     <div>{data}</div>
+//   )
+// }
+
+// export default UserProfile
