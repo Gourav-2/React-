@@ -560,3 +560,47 @@ import { useState } from "react"
 // }
 
 // export default UserProfile
+
+
+// import React from 'react'
+
+// const App = () => {
+//   // console.log(Array.prototype);
+//   // console.log(Object.prototype);
+//   // console.log(String.prototype);
+//   // console.log("hello");
+//   // console.log("hello");
+// //create a custom function
+
+//   Array.prototype.gourav=function(cd){//custom copy of map function
+//     let res=[]
+//     for(let i=0;i<this.length;i++){
+//       res.push(cd(this[i],i,this))
+//     }
+//   return res
+//   }
+
+
+
+
+
+
+
+//   let arr=[1,2,3,5,6,8]
+//   let data=arr.gourav((a,b,c)=>{
+//     return a
+//   })
+//  console.log(data);
+ 
+
+
+//   return (
+//     <div>App
+
+//     </div>
+//   )
+  
+  
+// }
+
+// export default App
